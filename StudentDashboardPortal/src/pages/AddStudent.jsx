@@ -69,7 +69,7 @@ export default function AddStudent() {
 
   return (
     <div className="container py-4">
-      <h2 className="page-title mb-1">Add Student</h2>
+      <h2 className="page-title mb-1 mt-3">Add Student</h2>
       <p className="page-subtitle text-muted mb-4">
         Enter the student's primary contact and course details.
       </p>
