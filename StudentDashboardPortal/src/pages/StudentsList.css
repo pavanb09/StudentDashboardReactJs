@@ -1,0 +1,30 @@
+.students-card {
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+/* Search Input styling */
+.search-input {
+  height: 48px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Empty State */
+.empty-illustration {
+  opacity: 0.85;
+}
+
+/* Skeleton Cards */
+.skeleton-card {
+  border-radius: 8px;
+}
