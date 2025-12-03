@@ -1,0 +1,79 @@
+.footer-wrapper {
+  background: #111827; /* dark navy */
+  color: #f3f4f6;
+  padding: 60px 0 20px;
+  margin-top: 60px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer-logo span {
+  color: #3b82f6; /* SaaS blue */
+}
+
+.footer-text {
+  color: #9ca3af;
+  margin: 15px 0 20px;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+/* Social Icons */
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #1f2937;
+  color: #9ca3af;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Section Heading */
+.footer-heading {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+/* Contact List */
+.footer-contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #d1d5db;
+  font-size: 15px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  color: #3b82f6;
+  font-size: 18px;
+}
+
+/* Bottom line */
+.footer-bottom {
+  border-top: 1px solid #1f2937;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}

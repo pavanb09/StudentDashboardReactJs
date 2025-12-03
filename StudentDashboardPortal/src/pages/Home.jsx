@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaUserGraduate, FaNetworkWired, FaCloudDownloadAlt } from "react-icons/fa";
+import { FaUserPlus, FaSearch, FaUsers, FaUserGraduate, FaNetworkWired, FaCloudDownloadAlt } from "react-icons/fa";
 import "./Home.css";
 
 export default function Home() {
@@ -18,38 +18,61 @@ export default function Home() {
             </h1>
 
             <p className="hero-subtitle">
-              A powerful React-based Student Dashboard designed for learning APIs, context management, routing, forms, and UI optimization. 
+              A powerful React-based Student Dashboard designed for learning APIs, context management, routing, forms, and UI optimization.
               Add, view, and organize students with ease—all inside a clean, modern interface.
             </p>
 
-            <div className="hero-buttons mt-4">
-              <Link to="/students" className="btn btn-primary btn-lg me-3">
-                Get Started
-              </Link>
-              {/* <a
-                href="https://dummyjson.com" 
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-secondary btn-lg"
-              >
-                View Documentation
-              </a> */}
-            </div>
+            <Link to="/students" className="btn btn-primary btn-lg mt-3">
+              Get Started
+            </Link>
           </div>
-
-          {/* RIGHT SIDE — Illustration */}
-          {/* <div className="col-md-6 text-center">
-            <div className="hero-illustration">
-              <img
-                src="https://undraw.co/api/illustrations/23ba40b5-199b-442d-bae0-9eef3de2bb14"
-                alt="Student Dashboard Illustration"
-                className="img-fluid hero-img"
-              />
-            </div>
-          </div> */}
 
         </div>
       </section>
+
+
+      {/* ACTION CARDS SECTION */}
+      <section className="action-cards-section py-5">
+        <div className="container">
+          <h2 className="text-center mb-4">Student Actions</h2>
+          <p className="text-center text-muted mb-5">Choose a quick action below to begin managing your students.</p>
+
+          <div className="row g-4">
+
+            {/* Add Student Card */}
+            <div className="col-md-4">
+              <div className="action-card shadow-sm p-4 text-center">
+                <FaUserPlus className="action-icon mb-3" />
+                <h4>Add Student</h4>
+                <p>Add a new student to the dashboard with name, email, and course details.</p>
+                <Link to="/add" className="btn btn-outline-primary mt-2">Add Student</Link>
+              </div>
+            </div>
+
+            {/* Search Students Card */}
+            <div className="col-md-4">
+              <div className="action-card shadow-sm p-4 text-center">
+                <FaSearch className="action-icon mb-3" />
+                <h4>Search Students</h4>
+                <p>Find any student instantly using the built-in real-time search feature.</p>
+                <Link to="/students" className="btn btn-outline-secondary mt-2">Search Students</Link>
+              </div>
+            </div>
+
+            {/* View Students Card */}
+            <div className="col-md-4">
+              <div className="action-card shadow-sm p-4 text-center">
+                <FaUsers className="action-icon mb-3" />
+                <h4>View All Students</h4>
+                <p>View complete list of students with images, emails, and course details.</p>
+                <Link to="/students" className="btn btn-success mt-2">View Students</Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       {/* FEATURES SECTION */}
       <section className="features-section py-5">

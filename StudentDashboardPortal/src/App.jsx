@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import AppNavbar from "./components/AppNavbar";
+import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
 const StudentsList = lazy(() => import("./pages/StudentsList"));
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/students/:id" element={<StudentDetails />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 }
