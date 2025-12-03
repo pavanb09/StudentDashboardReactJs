@@ -75,9 +75,9 @@ export default function StudentDetails() {
             </div>
 
             <div className="mt-4 d-flex gap-2 justify-content-center">
-              <Link to={`/students/${student.id}/edit`} className="btn btn-primary btn-sm">
+              {/* <Link to={`/students/${student.id}/edit`} className="btn btn-primary btn-sm">
                 Edit Profile
-              </Link>
+              </Link> */}
               <Link to="/students" className="btn btn-outline-secondary btn-sm">
                 Back
               </Link>
